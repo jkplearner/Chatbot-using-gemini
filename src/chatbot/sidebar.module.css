@@ -1,0 +1,40 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -20%; /* Initially hide the sidebar off the screen */
+  width: 20%; /* Set the width of the sidebar */
+  height: 100%;
+  background-color: #434c54;
+  transition: left 0.3s ease; /* Add transition for smooth opening/closing */
+  z-index: 1000; /* Ensure sidebar is above other content */
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  padding: 20px; /* Add padding to create space around the items */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.open {
+  left: 0; /* Move the sidebar to the left when it's open */
+}
+
+.closeButton {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end; /* Align the close button to the end (right) */
+  margin-top: 20px; /* Add some space above the close button */
+}
+
+.dateButton {
+  background-color: #343a40;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Add space between the buttons */
+  text-align: left; /* Align text to the left */
+}
